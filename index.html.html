@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shopping Villa</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/11.png" type="image/png" sizes="16x16 32x32">
+
+<style>
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,700|Bungee+Shade|Josefin+Sans:400';
+
+*{
+margin:0 auto;
+box-sizing: border-box;
+}
+
+body{
+background-color:#f1f3f6;
+}
+
+#top{
+	width:100%;
+	height:60px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#2874f0;
+}
+
+nav{
+width:100%;
+height:40px;
+background-color:#fff;
+position:absolute;
+top:60px;
+left:0;
+box-shadow:0 1px 1px 0 rgba(0,0,0,.16);
+}
+
+#a{
+	width:4%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:19%;
+    top:3px;
+    margin-right:10px;
+}
+#aa{
+	width:7%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:26%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaa{
+	width:2%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:36%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaaa{
+	width:3%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:41%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaaaa{
+	width:5%;
+    height:35px;
+    text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:47%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaaaaa{
+	width:7%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:55%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaaaaaa{
+	width:8%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:65%;
+    top:3px;
+    margin-right:10px;
+}
+
+#aaaaaaaa{
+	width:4%;
+    height:35px;
+	text-align:center;
+	line-height:35px;
+    background-color:#fff;
+    position:absolute;
+    left:76%;
+    top:3px;
+    margin-right:10px;
+}
+
+#b,#bb,#bbb,#bbbb,#bbbbb,#bbbbbb,#bbbbbbb{
+	width:65%;
+    height:559px;
+    background-color:red;
+    position:relative;
+    top:38px;
+	left:-9px;
+    display:none;
+	z-index:102;
+}
+
+#a:hover + #b {display:block;}#b:hover {display:block;}
+
+#aa:hover + #bb{display:block;}#bb:hover{display:block;}
+
+#aaa:hover + #bbb{display:block;}#bbb:hover{display:block;}
+
+#aaaa:hover + #bbbb{display:block;}#bbbb:hover{display:block;}
+
+#aaaaa:hover + #bbbbb{display:block;}#bbbbb:hover{display:block;}
+
+#aaaaaa:hover + #bbbbbb{display:block;}#bbbbbb:hover{display:block;}
+
+#aaaaaaa:hover + #bbbbbbb{display:block;}#bbbbbbb:hover{display:block;}
+
+#d{
+width:100%;
+height:100%;
+background-color:;
+display:flex;
+}
+
+#c{
+width:20%;
+height:100%;
+background-color:#fff;
+border:px solid black;
+box-shadow:0 2px 3px 0 rgba(0,0,0,.16);
+}
+
+#c:nth-child(even) {
+  background-color:#f1f3f6;
+}
+
+#c:nth-child(odd) {
+  background-color: #fff;
+}
+
+#f{
+width:240px;
+height:254px;
+border:px solid black;
+background-color:#fff;
+position:absolute;
+left:68%;
+top:60px;
+display:none;
+z-index:100;
+box-shadow:2px 2px 2px 0 rgba(0,0,0,.16);
+}
+
+#e{
+width:17px;
+height:17px;
+border:px solid black;
+background-color:#fff;
+position:absolute;
+left:44.44%;
+top:-9px;
+transform: rotate(45deg);
+}
+
+span:hover +#f{
+display:block;
+}
+
+#f:hover{
+display:block;
+}
+
+ul{
+width:100%;
+height:100%;
+border:0px solid green;
+display:flex;
+flex-direction: column;
+list-style-type:none;
+padding-left:0px;
+}
+
+li{
+width:100%;
+height:50.8px;
+border-bottom:1px solid gray;
+text-align:center;
+line-height:50.8px;
+}
+
+li:nth-child(5){
+border-bottom:0px;
+}
+
+span{
+width:auto;
+height:60px;
+line-height:60px;
+position:absolute;
+left:73%;
+border:px solid black;
+color:white;
+}
+
+img{
+position:absolute;
+left:21%;
+top:15px;
+}
+
+input{
+padding: 0 16px;
+border-radius: 2px 0 0 2px;
+border: 0;
+outline: 0 none;
+font-size: 14px;
+height: 36px;
+width:27%;
+position:absolute;
+top:12px;
+left:27%;
+}
+
+button{
+border:0px solid;
+background:#fff;
+width:37px;
+height:36px;
+position:absolute;
+top:12px;
+left:54%;
+}
+
+#logdiv{
+height:60px;
+width:120px;
+border:px solid black;
+background:;
+position:absolute;
+top:0px;
+left:65%;
+}
+
+#login{
+height:31px;
+width:100%;
+border:px solid black;
+background:white;
+position:absolute;
+top:25%;
+left:0%;
+color:#2874f0;
+line-height:31px;
+text-align:center;
+}
+
+#g{
+width:240px;
+height:254px;
+border:px solid black;
+background-color:#fff;
+position:absolute;
+left:62%;
+top:60px;
+display:none;
+z-index:101;
+box-shadow:2px 2px 2px 0 rgba(0,0,0,.16);
+}
+
+#h{
+width:17px;
+height:17px;
+border:px solid black;
+background-color:#fff;
+position:absolute;
+left:44.44%;
+top:-9px;
+transform: rotate(45deg);
+}
+
+#logdiv:hover + #g{
+display:block;
+}
+
+#g:hover{
+display:block;
+}
+
+#home{
+width:85%;
+min-height:100px;
+margin:0 auto;
+border:1px solid green;
+background:;
+display:flex;
+flex-direction:column;
+position:absolute;
+top:100px;
+left:7.50%;<!--if wnt resposive, width:90% so position:absolute; left responce when take this	-->
+z-index:-1;
+}
+
+#home #slider{
+width:100%;
+height:250px;
+border:px solid black;
+background:green;
+position:relative;
+top:5px;
+left:0px;
+}
+
+#home #slider img{
+width:100%;
+height:100%;
+position:relative;
+top:0px;
+left:0px;
+}
+
+#productinfo,#productinfo1,#productinfo2,#productinfo3,#productinfo4,#productinfo5,#productinfo6{
+width:100%;
+height:250px;
+border:1px solid black;
+background:red;
+position:relative;
+top:0px;
+left:0px;
+margin-top:10px;
+}
+
+</style>
+</head>
+<body>
+<div id="top"><!--header-->
+<img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_4ee2f9.png" width="80px" height="25px"><!--Logo-->
+<input type="text" value="" class="LM6RPg" title="Search for products, brands and more" name="q" autocomplete="off" placeholder="Search for products, brands and more" ><!--Search-->
+<button><i class="fa fa-search fa-lg" style='color:#2874f0;'></i></button><!--Search btn-->
+
+<div id="logdiv"><span id="login">Login</span></div><!--Login btn-->
+<div id="g"><div id="h"></div>
+<ul class="lgli">
+<li class="lgli">My profile</li>
+<li class="lgli">Flipkart pluse zone</li>
+<li class="lgli">Orders</li>
+<li class="lgli">Wishlist</li>
+<li class="lgli">Rewards</li>
+</ul>
+</div><!--/Login btn-->
+
+
+<span>More</span><!--More btn-->
+<div id="f"><div id="e"></div><!--More btn drpdwn-->
+<ul>
+<li>Notification Preferences</li>
+<li>Sell on Flipkart</li>
+<li>24x7 Customer Care</li>
+<li>Advertise</li>
+<li>Download App</li>
+</ul>
+</div><!--/More btn drpdwn-->
+</div><!--/header-->
+
+<nav><!--navbar-->
+<div id="a" >Electronics</div>
+<div id="b">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aa">TVs & Appliances</div>
+<div id="bb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaa" >Men</div>
+<div id="bbb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaaa">Women</div>
+<div id="bbbb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaaaa" >Baby & Kids</div>
+<div id="bbbbb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaaaaa">Home & Furniture</div>
+<div id="bbbbbb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaaaaaa">Sports, Books & More</div>
+<div id="bbbbbbb">
+<div id="d">
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+<div id="c"></div>
+</div>
+</div>
+
+<div id="aaaaaaaa">Offer Zone</div>
+</nav><!--/navbar-->
+
+
+<div id="home">
+<div id="slider">
+<img src="./image/1.jpg" id="one">
+</div>
+<div id="productinfo"></div>
+<div id="productinfo1"></div>
+<div id="productinfo2"></div>
+<div id="productinfo3"></div>
+<div id="productinfo4"></div>
+<div id="productinfo5"></div>
+<div id="productinfo6"></div>
+</div>
+<script>
+var x=1;
+
+function abc()
+{
+
+var a=document.getElementById('one');
+		a.src="./image/" + x + ".jpg";
+		x++;
+		if(x==6)
+		{
+			x=1;
+		}
+}
+
+setInterval("abc()",3000);
+
+</script>
+</body>
+</html>
